@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*root= define valores a palavras que facilitam o entendimento e deixam o codigo mais limpo */
+:root {
+    --fundo: #DCD2CC;
+    --secondary-color: #161F30;
+    --cor-complementar: #F2E3D0;
+}
+
+
+.container {
+    background: #191919;
+    min-height: 100vh; /*Define a altura mínima da página */
+    font-family: Montserrat, sans-serif;
+}
+
+body {
+    background-color: var(--fundo);
+}
+
+nav a { /*Dentro da tag nav, todos os links(a) seguirão esses parâmetros*/
+    font-size: 40px;
+    color: #fff;
+    text-decoration: none; /*Link fica sem linha embaixo */
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    position: fixed; /* Seta a posição fixa na tela, mas podendo ser adaptada para dispositivos móveis */
+    left: 0; /*Deixa a esquerda */
+    z-index: 50;/* deixar o elemento a frente dos outros */
+    display: flex; /* Deixa as coisas soltas, alinhadas inicialmente na horizontal */
+    justify-content: space-around;/* Ficam espaçadas e todas deireções; Atrás, entre eles e depois */
+    flex-direction: column;/* Organiza o display flex em colunas; não mais na horizontal */
+    height: 100vh;
+    background: var(--secondary-color);
+}
+
+section {
+    position: absolute; /* Posição constante, não muda*/
+    height: 100vh;
+    transition: all ease-in .5s; /* Define uma transição de início lento, que dura 5 segundos em todos sentidos/aspectos */
+}
+
+section h1 {
+    color: black;
+    font-size: 40px;
+    text-transform: uppercase; /* Deixa todo texto em caixa alta */
+    opacity: 0; /*Fica invísivel */
+    margin: 10px 0px 0px 100px; /*Margens, Cima, Direita, Baixo, Esquerda */
+    text-align: center;
+}
+
+
+section:target { /*target= Define o alvo específico a ser estilizado */
+    opacity: 1;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+section:target h1 {
+    opacity: 0;
+    animation: 2s fadeIn forwards .5s; /*FadeIN=Animação de Entrada gradual 
+                                       Foreards=Este valor define o que acontece quando a animação termina, no caso ele aparece*/
+}
+
+#Aula-1 {
+    background: var(--fundo);
+}
+
+#Aula-2 {
+    background: var(--fundo);
+}
+
+#Aula-3 {
+    background: var(--fundo);
+}
+
+#Aula-4 {
+    background: var(--fundo);
+}
+
+@keyframes fadeIn { /*keyframe= define o comportamento de uma animação, ou seja quando chegar a um ponto de controle, o elemento que está sofrendo animação irá aparecer */
+    100% {
+        opacity: 1
+    }
+}
+
+.alinhamento-textos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nome-curso{
+    margin:5px 0px 0px 110px;
+    background-color: var(--cor-complementar);
+    max-width: 260px;
+    padding: 8px;
+}
+
+.alinhamento-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px 20px 100px;
+    padding: 5px;
+
+}
+
+.txt-aula-1 {
+    text-align: center;
+}
+
+.alinhamento-2 {
+    background-color: #EBEBEB;
+    padding: 10px;
+    border-radius: 30px;
+    box-shadow: 1px 2px 2px black;
+    margin: 10px 0px 10px 110px;
+}
+
+.txt-rodape {
+    text-align: center;
+}
+
+.rodape {
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+    background-color: aliceblue;
+    margin: 0px 0px 0px 0px;
+}
+
+.proxima-aula {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 150px;
+    margin: 10px 0px 10px 1150px;  
+}
+
+.botao-1{
+    background-color: #F2E3D0;
+    padding: 20px;
+    border-radius: 30px;
+    min-width: 150px;
+}
+
+.proxima-aula a{
+    text-decoration: none;
+    color: black;
+}
+
+.gif-1{
+    width: 80px;
+    margin: 10px 0px 0px -40px;
+}
