@@ -1,166 +1,315 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
-
-/*root= define valores a palavras que facilitam o entendimento e deixam o codigo mais limpo */
-:root {
-    --fundo: #DCD2CC;
-    --secondary-color: #161F30;
-    --cor-complementar: #F2E3D0;
-}
-
-
-.container {
-    background: #191919;
-    min-height: 100vh; /*Define a altura mínima da página */
-    font-family: Montserrat, sans-serif;
-}
-
 body {
-    background-color: var(--fundo);
+	font-family: 'Montserrat', sans-serif;
+	line-height: 1.6;
+	margin: 0;
+	min-height: 100vh;
 }
-
-nav a { /*Dentro da tag nav, todos os links(a) seguirão esses parâmetros*/
-    font-size: 40px;
-    color: #fff;
-    text-decoration: none; /*Link fica sem linha embaixo */
-    padding: 20px;
-    text-align: center;
-}
-
-nav {
-    position: fixed; /* Seta a posição fixa na tela, mas podendo ser adaptada para dispositivos móveis */
-    left: 0; /*Deixa a esquerda */
-    z-index: 50;/* deixar o elemento a frente dos outros */
-    display: flex; /* Deixa as coisas soltas, alinhadas inicialmente na horizontal */
-    justify-content: space-around;/* Ficam espaçadas e todas deireções; Atrás, entre eles e depois */
-    flex-direction: column;/* Organiza o display flex em colunas; não mais na horizontal */
-    height: 100vh;
-    background: var(--secondary-color);
-}
-
-section {
-    position: absolute; /* Posição constante, não muda*/
-    height: 100vh;
-    transition: all ease-in .5s; /* Define uma transição de início lento, que dura 5 segundos em todos sentidos/aspectos */
-}
-
-section h1 {
-    color: black;
-    font-size: 40px;
-    text-transform: uppercase; /* Deixa todo texto em caixa alta */
-    opacity: 0; /*Fica invísivel */
-    margin: 10px 0px 0px 100px; /*Margens, Cima, Direita, Baixo, Esquerda */
-    text-align: center;
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 
-section:target { /*target= Define o alvo específico a ser estilizado */
-    opacity: 1;
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 10;
+h2,
+h3,
+
+a {
+	text-decoration: none;
 }
 
-section:target h1 {
-    opacity: 0;
-    animation: 2s fadeIn forwards .5s; /*FadeIN=Animação de Entrada gradual 
-                                       Foreards=Este valor define o que acontece quando a animação termina, no caso ele aparece*/
+
+
+.logo {
+	margin: 0;
+	font-size: 1.45em;
 }
 
-#Aula-1 {
-    background: var(--fundo);
-}
-
-#Aula-2 {
-    background: var(--fundo);
-}
-
-#Aula-3 {
-    background: var(--fundo);
-}
-
-#Aula-4 {
-    background: var(--fundo);
-}
-
-@keyframes fadeIn { /*keyframe= define o comportamento de uma animação, ou seja quando chegar a um ponto de controle, o elemento que está sofrendo animação irá aparecer */
-    100% {
-        opacity: 1
-    }
-}
-
-.alinhamento-textos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.nome-curso{
-    margin:5px 0px 0px 110px;
-    background-color: var(--cor-complementar);
-    max-width: 260px;
-    padding: 8px;
-}
-
-.alinhamento-1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 0px 20px 100px;
-    padding: 5px;
+.main-nav {
+	margin-top: 5px;
 
 }
-
-.txt-aula-1 {
-    text-align: center;
+.logo a,
+.main-nav a {
+	padding: 10px 15px;
+	text-transform: uppercase;
+	text-align: center;
+	display: block;
 }
 
-.alinhamento-2 {
-    background-color: #EBEBEB;
-    padding: 10px;
-    border-radius: 30px;
-    box-shadow: 1px 2px 2px black;
-    margin: 10px 0px 10px 110px;
+.main-nav a {
+	color: #34495e;
+	font-size: .99em;
 }
 
-.txt-rodape {
-    text-align: center;
+.main-nav a:hover {
+	color: white;
 }
 
-.rodape {
-    display: flex;
-    justify-content: center;
-    padding: 25px;
-    background-color: aliceblue;
-    margin: 0px 0px 0px 0px;
+.header {
+	padding-top: .5em;
+	padding-bottom: .5em;
+	border: 1px solid #a2a2a2;
+	background-color: #8A7875;
+	-webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
 }
 
-.proxima-aula {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 150px;
-    margin: 10px 0px 10px 1150px;  
+
+@media (min-width: 769px) {
+	.header,
+	.main-nav {
+		display: flex;
+	}
+	.header {
+		flex-direction: column;
+		align-items: center;
+    	.header{
+		width: 80%;
+		margin: 0 auto;
+		max-width: 1150px;
+	}
+	}
+
 }
 
-.botao-1{
+@media (min-width: 1025px) {
+	.header {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+}
+
+.conteudo{
+    margin: -10px 0px 0px 0px;
+    background-image: url(./img/platao.png);
+    display: grid;
+    grid-template-columns: 10% 40% 10% 30% 10%;
+}
+
+.alinhamento-1{
     background-color: #F2E3D0;
-    padding: 20px;
-    border-radius: 30px;
-    min-width: 150px;
+    padding: 10px;
+    margin: 130px 0px 40px 20px;
+    font-size: 18px;
+    border-radius: 20px;
+    text-align: justify;
+    height: 590px;
 }
 
-.proxima-aula a{
-    text-decoration: none;
+.alinhamento-2{
+    
+    max-height: 40px;
+    display: flex;
+    justify-content: center;
+    
+    text-align: center;
+    align-items: center;
+  
+    margin: 200px 0px 0px 140px;
+}
+
+.link-1{
     color: black;
+    background-color: #F2E3D0;
+    padding: 20px 40px 20px 40px;
+    border-radius: 20px;
 }
 
 .gif-1{
-    width: 80px;
-    margin: 10px 0px 0px -40px;
+    width: 60px;
+    margin: 20px 0px 0px -50px;
 }
+
+.separacao{
+    color: black;
+    background-color: black;
+    height: 10px;
+}
+
+.outerdiv {
+    width: 100%; /* Define a largura da div externa para ocupar toda a largura da tela */
+    min-height: 100vh; /* Define a altura mínima da div externa para ocupar toda a altura da viewport */
+    background: #6D808E; /* Define a cor de fundo da div externa */
+    display: flex; /* Utiliza flexbox para centralizar o conteúdo */
+    align-items: center; /* Centraliza verticalmente o conteúdo dentro da div externa */
+    justify-content: center; /* Centraliza horizontalmente o conteúdo dentro da div externa */
+}
+
+.innerdiv {
+    transform: scale(0.9); /* Reduz o tamanho da div interna em 10% */
+    margin: 1rem; /* Define margem ao redor da div interna */
+    display: grid; /* Utiliza grid layout para organizar os depoimentos */
+    grid-gap: 1.5rem; /* Define o espaçamento entre as células do grid */
+    grid-template-rows: repeat(2, 22rem); /* Define 2 linhas com altura de 22rem cada */
+    grid-template-columns: repeat(4, 17rem); /* Define 4 colunas com largura de 17rem cada */
+}
+
+.eachdiv {
+    padding: 1rem 2rem; /* Define o preenchimento interno de cada depoimento */
+    border-radius: 0.8rem; /* Define bordas arredondadas para cada depoimento */
+    box-shadow: 5px 5px 20px #6d6b6b6b; /* Adiciona sombra aos depoimentos */
+    color: white; /* Define a cor do texto padrão para branco */
+}
+
+.div1 {
+    background: #E1E1D9; /* Define a cor de fundo do primeiro depoimento */
+    grid-column: 1/3; /* Ocupa as colunas 1 e 2 do grid */
+    grid-row: 1/2; /* Ocupa a primeira linha do grid */
+    background-repeat: no-repeat; /* Impede a repetição da imagem de fundo */
+    background-position-x: 25rem; /* Posiciona a imagem de fundo horizontalmente */
+    color: black;
+}
+
+.div2 {
+    background: #C6C8BD; /* Define a cor de fundo do segundo depoimento */
+    grid-column: 3/4; /* Ocupa a terceira coluna do grid */
+    grid-row: 1/2; /* Ocupa a primeira linha do grid */
+}
+
+.div3 {
+    background: #17242D; /* Define a cor de fundo do terceiro depoimento */
+    grid-column: 4/5; /* Ocupa a quarta coluna do grid */
+    grid-row: 1/3; /* Ocupa as duas primeiras linhas do grid */
+    color: black; /* Define a cor do texto para preto */
+}
+
+.div4 {
+    background: #8D928E; /* Define a cor de fundo do quarto depoimento */
+    grid-column: 1/2; /* Ocupa a primeira coluna do grid */
+    grid-row: 2/3; /* Ocupa a segunda linha do grid */
+    color: rgb(255, 255, 255); /* Define a cor do texto para branco */
+}
+
+.div5 {
+    background: #2D3E48; /* Define a cor de fundo do quinto depoimento */
+    grid-column: 2/4; /* Ocupa as colunas 2 e 3 do grid */
+    grid-row: 2/3; /* Ocupa a segunda linha do grid */
+}
+
+.userdetails {
+    display: flex; /* Utiliza flexbox para organizar a foto e o nome/cargo */
+}
+
+.imgbox {
+    margin-right: 1rem; /* Define a margem à direita da foto */
+}
+
+.imgbox img {
+    border-radius: 50%; /* Define a foto como circular */
+    width: 2rem; /* Define a largura da foto */
+    border: 2px solid #cec5c5; /* Adiciona uma borda à foto */
+}
+
+.detbox {
+    display: flex; /* Utiliza flexbox para organizar o nome e cargo */
+    flex-direction: column; /* Organiza o nome e cargo em coluna */
+    justify-content: center; /* Centraliza verticalmente o nome e cargo */
+}
+
+.detbox p {
+    margin: 0; /* Remove a margem padrão dos parágrafos */
+}
+
+.detbox .nome {
+    color: hsl(0, 0%, 81%); /* Define a cor do nome */
+    font-size: 0.9rem; /* Define o tamanho da fonte do nome */
+    margin-bottom: 0.1rem; /* Define a margem inferior do nome */
+    font-weight: 600; /* Define a espessura da fonte do nome */
+}
+
+.detbox .nome.dark {
+    color: #49505A; /* Define a cor do nome para os depoimentos com a classe "dark" */
+}
+
+.detbox .profissao {
+    color: hsl(0, 0%, 81%); /* Define a cor do cargo */
+    opacity: 50%; /* Define a opacidade do cargo */
+    font-size: 0.8rem; /* Define o tamanho da fonte do cargo */
+}
+
+.detbox .profissao.dark {
+    color: #49505A; /* Define a cor do cargo para os depoimentos com a classe "dark" */
+}
+
+.review h4 {
+    font-size: 1.4rem; /* Define o tamanho da fonte do título do depoimento */
+    color: #F3DEFF; /* Define a cor do título do depoimento */
+    font-weight: 600; /* Define a espessura da fonte do título do depoimento */
+    line-height: 1.5; /* Define o espaçamento entre as linhas do título */
+    margin-bottom: 0.8rem; /* Define a margem inferior do título */
+}
+
+.comentario.dark h4 {
+    color: #292929; /* Define a cor do título para os depoimentos com a classe "dark" */
+}
+
+.comentario p {
+    font-size: 0.95rem; /* Define o tamanho da fonte do texto do depoimento */
+    color: #F3DEFF; /* Define a cor do texto do depoimento */
+    font-weight: 500; /* Define a espessura da fonte do texto do depoimento */
+    opacity: 50%; /* Define a opacidade do texto do depoimento */
+    line-height: 1.5; /* Define o espaçamento entre as linhas do texto */
+}
+
+.comentario.dark p {
+    color: #000000; /* Define a cor do texto para os depoimentos com a classe "dark" */
+}
+
+.comentario h4{
+    color: white;
+}
+
+.attribution {
+    font-size: 1rem; /* Define o tamanho da fonte da atribuição */
+    line-height: 1.5; /* Define o espaçamento entre as linhas da atribuição */
+    position: fixed; /* Posiciona a atribuição de forma fixa na tela */
+    bottom: 1rem; /* Define a distância da atribuição da parte inferior da tela */
+    right: 1rem; /* Define a distância da atribuição da parte direita da tela */
+    text-align: right; /* Alinha o texto da atribuição à direita */
+}
+
+.attribution a {
+    text-decoration: none; /* Remove a decoração padrão dos links */
+}
+
+@media only screen and (max-width: 1000px) {
+    .innerdiv {
+        transform: scale(0.7); /* Reduz o tamanho dos depoimentos em telas menores */
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .innerdiv {
+        transform: scale(0.6); /* Reduz ainda mais o tamanho dos depoimentos em telas menores */
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .div1 {
+        background-position-x: 10rem; /* Ajusta a posição da imagem de fundo do primeiro depoimento */
+    }
+
+    .innerdiv {
+        display: flex; /* Altera o layout para flexbox em telas menores */
+        flex-direction: column; /* Organiza os depoimentos em coluna */
+        transform: scale(1); /* Restaura o tamanho original dos depoimentos */
+        margin: 2rem; /* Define margem ao redor dos depoimentos */
+        margin-bottom: 5rem; /* Define margem inferior adicional */
+    }
+}
+
+.texto-div--4 {
+    color: white;
+  }
+
+
+  

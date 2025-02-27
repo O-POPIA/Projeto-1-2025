@@ -1,0 +1,113 @@
+:root {
+    --fundo: #DCD2CC;
+    --secondary-color: #161F30;
+    --cor-complementar: #F2E3D0;
+}
+
+body {
+    margin: 0;
+    background-color: var(--fundo);
+    max-width: 100%;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 120px;
+    background-color: #161F30;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    display: grid;
+    grid-template-rows:10% 25% 25% 25% 25%;
+}
+  
+  li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+  
+  li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+
+.nome-curso{
+    margin:5px 0px 0px 110px;
+    background-color: var(--cor-complementar);
+    max-width: 260px;
+    padding: 8px;
+}
+
+.alinhamento-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px 20px 100px;
+    padding: 5px;
+
+}
+
+.txt-aula-1 {
+    text-align: justify;
+    font-size: 17px;
+}
+
+.alinhamento-2 {
+    background-color: #EBEBEB;
+    padding: 10px;
+    border-radius: 30px;
+    box-shadow: 1px 2px 2px black;
+    margin: 10px 0px 10px 110px;
+}
+
+.txt-rodape {
+    text-align: center;
+}
+
+.rodape {
+    display: flex;
+    justify-content: center;
+    padding: 25px 41px 25px 41px;
+    background-color: aliceblue;
+    margin: 0px -16px 0px 0px;
+}
+
+.proxima-aula {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin: 10px 0px 10px 0px;  
+}
+
+.botao-1{
+    background-color: #F2E3D0;
+    padding: 10px;
+    min-width: 150px;
+    text-align: center;
+    margin: 14px 0px 14px 0px;
+}
+
+.proxima-aula a{
+    text-decoration: none;
+    color: black;
+}
+
+.gif-1{
+    display: flex;
+    width: 60px;
+    position: absolute;
+    right: 0;
+}
+
+h1{
+    text-align: center;
+    background-color: var(--cor-complementar);
+    justify-content: center;
+    margin: 20px 320px 20px 440px;
+}
+
