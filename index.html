@@ -6,16 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Círculo Socrático</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 
-<header class="header" style="height: 100px;">
-    <h1 class="logo"><a href="#"><img src="./img/logo-curso.png" alt=""
-                style="width: 30%; margin: 145px 0px 0px -460px"></a></h1>
+<header  class="header" style="height: 100px;">
+    <h1 class="logo"><a href="#"><img src="./img/logo-curso.png" alt="" class="logo-nav"></a></h1>
     <ul class="main-nav">
-        <li><a href="#">Matricule-se</a></li>
-        <li><a href="#">Contato</a></li>
-        <li><a href="#">Professores</a></li>
+        <li><a class="transicao" href="#tra-1">Matricule-se</a></li>
+        <li><a class="transicao" href="#tra-2">Professores</a></li>
+        <li><a class="transicao" href="#tra-3">Contato</a></li>
     </ul>
 </header>
 <section class="conteudo">
@@ -43,7 +47,7 @@
     </div>
     <spam></spam>
     <div class="alinhamento-2">
-        <a href="./curso.html" class="link-1">Junte-se</a><img src="./img/Gif-Clique Aqui.gif" alt="" class="gif-1">
+        <a id="tra-1" href="./aulas/Aula-1.html" class="link-1">Junte-se</a><img src="./img/Gif-Clique Aqui.gif" alt="" class="gif-1">
     </div>
 </section>
 <section class="separacao">
@@ -168,16 +172,103 @@
     texto-div-4: classe exclusiva para o texto do 4° comentário.*/-->
 <section class="separacao">
 </section>
+<div class="txt-prof" style="display: flex; justify-content: center; align-items: center;">
+    <h1 class="tlt-prof">
+        Conheça nossos professores:
+    </h1>
+</div>
+<section class="professores">
+
+    <div id="tra-2" class="prof-div">
+
+        <section class="prof-1-sec">
+            <div class="alin-prof">
+                <img src="./img/image 10.png" alt="" class="prof-1">
+            </div>
+            <div>
+                <p class="txt-prof">Valentina Freitas</p>
+                <h1 style="display: flex; justify-content: center; align-items: center; color: #6D615F;">Ética</h1>
+            </div>
+            <div class="social-prof">
+                <a href=""><img src="./img/instagram.png" alt="" style="width: 40px;"></a>
+                <a href=""><img src="./img/twitter.png" alt="" style="width: 40px;"></a>
+                <a href=""><img src="./img/whatsapp.png" alt="" style="width: 40px;"></a>
+            </div>
+
+        </section>
+        <section class="prof-2-sec">
+            <div class="alin-prof">
+                <img src="./img/image 11.png" alt="" class="prof-2">
+            </div>
+            <div>
+                <p class="txt-prof">Jorge Lucas</p>
+                <h1 style="display: flex; justify-content: center; align-items: center; color: #6D615F;">Epistemologia
+                </h1>
+            </div>
+            <div class="social-prof">
+                <a href=""><img src="./img/instagram.png" alt="" style="width: 40px;"></a>
+                <a href=""><img src="./img/twitter.png" alt="" style="width: 40px;"></a>
+                <a href=""><img src="./img/whatsapp.png" alt="" style="width: 40px;"></a>
+            </div>
+        </section>
+        <section class="prof-3-sec">
+            <div class="alin-prof">
+                <img src="./img/image 14.png" alt="" class="prof-3">
+            </div>
+            <div>
+                <p class="txt-prof">Júlio Silva</p>
+                <h1 style="display: flex; justify-content: center; align-items: center; color: #6D615F;">Política</h1>
+            </div>
+            <div class="social-prof">
+                <a href=""><img src="./img/instagram.png" alt="" style="width: 40px;"></a>
+                <a href=""><img src="./img/twitter.png" alt="" style="width: 40px;"></a>
+                <a href=""><img src="./img/whatsapp.png" alt="" style="width: 40px;"></a>
+            </div>
+        </section>
+    </div>
+</section>
 
 <footer class="rodape">
-    <section class="rodape-txt-col">
-        <h1 class="tlt-rodape">Suporte</h1>
-        <p class="txt-rodape">Pagamentos</p>
-        <p class="txt-rodape">Problemas de login</p>
-        <p class="txt-rodape">Reclame aqui</p>
-    </section>
-</footer>
+    <section class="rodape-1" >
+        <section class="rodape-txt-col">
+            <h1 class="tlt-rodape">Suporte</h1>
+            <a href="" style="text-decoration: none; color: white;"><p class="txt-rodape">Pagamentos</p></a>
+            <a href="" style="text-decoration: none; color: white;"><p class="txt-rodape">Problemas de login</p></a>
+            <a href="" style="text-decoration: none; color: white;"><p class="txt-rodape">Reclame aqui</p></a>
+        </section>
 
+        <section class="rodape-txt-col">
+            <h1 class="tlt-rodape">Professores</h1>
+            <a href="" style="text-decoration: none; color: white;"><p class="txt-rodape">Seja um professor</p></a>
+            <a href="" style="text-decoration: none; color: white;"><p class="txt-rodape">Suporte Profissional</p></a>
+        </section>
+
+        <span></span>
+
+        <div class="contato" style="margin-top: 40px;" id="tra-3">
+            <form id="contact-form" style="display: flex; align-items: center;">
+                <input type="email" id="email" name="email" placeholder="Seu email" required
+                    style="padding: 10px; border-radius: 40px;">
+                <button type="submit" style="margin: 0px 0px 0px 0px; border-radius: 10px; margin-left: 2px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path
+                            d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                    </svg>
+                </button>
+            </form>
+            <div class="social-curso">
+                <a href=""><img src="./img/instagram.png" alt="" style="width: 35px;"></a>
+                <a href=""><img src="./img/twitter.png" alt="" style="width: 35px;"></a>
+                <a href=""><img src="./img/whatsapp.png" alt="" style="width: 35px;"></a>
+            </div>
+        </div>
+        <span></span>
+    </section>
+    <div class="separacao light"></div>
+    <p style="display: flex; justify-content: center; align-items: center;text-align: center;">
+        Círculo Socrático © Todos Direitos Reservados
+    </p>
+</footer>
 </body>
 
 </html>
