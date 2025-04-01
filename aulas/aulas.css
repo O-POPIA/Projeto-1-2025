@@ -9,7 +9,7 @@ body {
     background-color: var(--fundo);
     max-width: 100%;
   }
-
+  
   ul {
     list-style-type: none;
     margin: 0;

@@ -1,79 +1,81 @@
 * {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
+
 body {
     font-family: "Inter", serif;
-	line-height: 1.6;
-	margin: 0;
-	min-height: 100vh;
+    line-height: 1.6;
+    margin: 0;
+    min-height: 100vh;
     background-color: #DCD2CC;
 }
 
 
 
 ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 h2,
 h3,
 
 a {
-	text-decoration: none;
+    text-decoration: none;
 }
 
 .logo {
-	margin: 0;
-	font-size: 1.45em;
+    margin: 0;
+    font-size: 1.45em;
 }
 
 .main-nav {
-	margin-top: 5px;
+    margin-top: 5px;
 
 }
+
 .logo a,
 .main-nav a {
-	padding: 10px 15px;
-	text-transform: uppercase;
-	text-align: center;
-	display: block;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
 }
 
 .main-nav a {
-	color: #34495e;
-	font-size: .99em;
+    color: #34495e;
+    font-size: .99em;
 }
 
 .main-nav a:hover {
-	color: white;
+    color: white;
 }
 
 .header {
     padding-top: .5em;
-	padding-bottom: .5em;
-	border: 1px solid #a2a2a2;
-	background-color: #8A7875;
-	-webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
-	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
-	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
+    padding-bottom: .5em;
+    border: 1px solid #a2a2a2;
+    background-color: #8A7875;
+    -webkit-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
 }
 
 
 
 
-.conteudo{
+.conteudo {
     margin: -10px 0px 0px 0px;
     background-image: url(./img/platao.png);
     display: grid;
     grid-template-columns: 10% 40% 10% 30% 10%;
 }
 
-.alinhamento-1{
+.alinhamento-1 {
     background-color: #F2E3D0;
     padding: 10px;
     margin: 130px 0px 40px 20px;
@@ -83,185 +85,258 @@ a {
     height: 620px;
 }
 
-.alinhamento-2{
-    
+.alinhamento-2 {
+
     max-height: 40px;
     display: flex;
     justify-content: center;
-    
+
     text-align: center;
     align-items: center;
-  
+
     margin: 200px 0px 0px 140px;
 }
 
-.link-1{
+.link-1 {
     color: black;
     background-color: #F2E3D0;
     padding: 20px 40px 20px 40px;
     border-radius: 20px;
 }
 
-.gif-1{
+.gif-1 {
     width: 60px;
     margin: 20px 0px 0px -50px;
 }
 
-.separacao{
+.separacao {
     color: black;
     background-color: black;
     height: 10px;
 }
 
 .outerdiv {
-    width: 100%; /* Define a largura da div externa para ocupar toda a largura da tela */
-    min-height: 100vh; /* Define a altura mínima da div externa para ocupar toda a altura da viewport */
-    background: #6D808E; /* Define a cor de fundo da div externa */
-    display: flex; /* Utiliza flexbox para centralizar o conteúdo */
-    align-items: center; /* Centraliza verticalmente o conteúdo dentro da div externa */
-    justify-content: center; /* Centraliza horizontalmente o conteúdo dentro da div externa */
+    width: 100%;
+    /* Define a largura da div externa para ocupar toda a largura da tela */
+    min-height: 100vh;
+    /* Define a altura mínima da div externa para ocupar toda a altura da viewport */
+    background: #6D808E;
+    /* Define a cor de fundo da div externa */
+    display: flex;
+    /* Utiliza flexbox para centralizar o conteúdo */
+    align-items: center;
+    /* Centraliza verticalmente o conteúdo dentro da div externa */
+    justify-content: center;
+    /* Centraliza horizontalmente o conteúdo dentro da div externa */
 }
 
 .innerdiv {
-    transform: scale(0.9); /* Reduz o tamanho da div interna em 10% */
-    margin: 1rem; /* Define margem ao redor da div interna */
-    display: grid; /* Utiliza grid layout para organizar os depoimentos */
-    grid-gap: 1.5rem; /* Define o espaçamento entre as células do grid */
-    grid-template-rows: repeat(2, 22rem); /* Define 2 linhas com altura de 22rem cada */
-    grid-template-columns: repeat(4, 17rem); /* Define 4 colunas com largura de 17rem cada */
+    transform: scale(0.9);
+    /* Reduz o tamanho da div interna em 10% */
+    margin: 1rem;
+    /* Define margem ao redor da div interna */
+    display: grid;
+    /* Utiliza grid layout para organizar os depoimentos */
+    grid-gap: 1.5rem;
+    /* Define o espaçamento entre as células do grid */
+    grid-template-rows: repeat(2, 22rem);
+    /* Define 2 linhas com altura de 22rem cada */
+    grid-template-columns: repeat(4, 17rem);
+    /* Define 4 colunas com largura de 17rem cada */
 }
 
 .eachdiv {
-    padding: 1rem 2rem; /* Define o preenchimento interno de cada depoimento */
-    border-radius: 0.8rem; /* Define bordas arredondadas para cada depoimento */
-    box-shadow: 5px 5px 20px #6d6b6b6b; /* Adiciona sombra aos depoimentos */
-    color: white; /* Define a cor do texto padrão para branco */
+    padding: 1rem 2rem;
+    /* Define o preenchimento interno de cada depoimento */
+    border-radius: 0.8rem;
+    /* Define bordas arredondadas para cada depoimento */
+    box-shadow: 5px 5px 20px #6d6b6b6b;
+    /* Adiciona sombra aos depoimentos */
+    color: white;
+    /* Define a cor do texto padrão para branco */
 }
 
 .div1 {
-    background: #E1E1D9; /* Define a cor de fundo do primeiro depoimento */
-    grid-column: 1/3; /* Ocupa as colunas 1 e 2 do grid */
-    grid-row: 1/2; /* Ocupa a primeira linha do grid */
-    background-repeat: no-repeat; /* Impede a repetição da imagem de fundo */
-    background-position-x: 25rem; /* Posiciona a imagem de fundo horizontalmente */
+    background: #E1E1D9;
+    /* Define a cor de fundo do primeiro depoimento */
+    grid-column: 1/3;
+    /* Ocupa as colunas 1 e 2 do grid */
+    grid-row: 1/2;
+    /* Ocupa a primeira linha do grid */
+    background-repeat: no-repeat;
+    /* Impede a repetição da imagem de fundo */
+    background-position-x: 25rem;
+    /* Posiciona a imagem de fundo horizontalmente */
     color: black;
 }
 
 .div2 {
-    background: #C6C8BD; /* Define a cor de fundo do segundo depoimento */
-    grid-column: 3/4; /* Ocupa a terceira coluna do grid */
-    grid-row: 1/2; /* Ocupa a primeira linha do grid */
+    background: #C6C8BD;
+    /* Define a cor de fundo do segundo depoimento */
+    grid-column: 3/4;
+    /* Ocupa a terceira coluna do grid */
+    grid-row: 1/2;
+    /* Ocupa a primeira linha do grid */
 }
 
 .div3 {
-    background: #17242D; /* Define a cor de fundo do terceiro depoimento */
-    grid-column: 4/5; /* Ocupa a quarta coluna do grid */
-    grid-row: 1/3; /* Ocupa as duas primeiras linhas do grid */
-    color: black; /* Define a cor do texto para preto */
+    background: #17242D;
+    /* Define a cor de fundo do terceiro depoimento */
+    grid-column: 4/5;
+    /* Ocupa a quarta coluna do grid */
+    grid-row: 1/3;
+    /* Ocupa as duas primeiras linhas do grid */
+    color: black;
+    /* Define a cor do texto para preto */
 }
 
 .div4 {
-    background: #8D928E; /* Define a cor de fundo do quarto depoimento */
-    grid-column: 1/2; /* Ocupa a primeira coluna do grid */
-    grid-row: 2/3; /* Ocupa a segunda linha do grid */
-    color: rgb(255, 255, 255); /* Define a cor do texto para branco */
+    background: #8D928E;
+    /* Define a cor de fundo do quarto depoimento */
+    grid-column: 1/2;
+    /* Ocupa a primeira coluna do grid */
+    grid-row: 2/3;
+    /* Ocupa a segunda linha do grid */
+    color: rgb(255, 255, 255);
+    /* Define a cor do texto para branco */
 }
 
 .div5 {
-    background: #2D3E48; /* Define a cor de fundo do quinto depoimento */
-    grid-column: 2/4; /* Ocupa as colunas 2 e 3 do grid */
-    grid-row: 2/3; /* Ocupa a segunda linha do grid */
+    background: #2D3E48;
+    /* Define a cor de fundo do quinto depoimento */
+    grid-column: 2/4;
+    /* Ocupa as colunas 2 e 3 do grid */
+    grid-row: 2/3;
+    /* Ocupa a segunda linha do grid */
 }
 
 .userdetails {
-    display: flex; /* Utiliza flexbox para organizar a foto e o nome/cargo */
+    display: flex;
+    /* Utiliza flexbox para organizar a foto e o nome/cargo */
 }
 
 .imgbox {
-    margin-right: 1rem; /* Define a margem à direita da foto */
+    margin-right: 1rem;
+    /* Define a margem à direita da foto */
 }
 
 .imgbox img {
-    border-radius: 50%; /* Define a foto como circular */
-    width: 2rem; /* Define a largura da foto */
-    border: 2px solid #cec5c5; /* Adiciona uma borda à foto */
+    border-radius: 50%;
+    /* Define a foto como circular */
+    width: 2rem;
+    /* Define a largura da foto */
+    border: 2px solid #cec5c5;
+    /* Adiciona uma borda à foto */
 }
 
 .detbox {
-    display: flex; /* Utiliza flexbox para organizar o nome e cargo */
-    flex-direction: column; /* Organiza o nome e cargo em coluna */
-    justify-content: center; /* Centraliza verticalmente o nome e cargo */
+    display: flex;
+    /* Utiliza flexbox para organizar o nome e cargo */
+    flex-direction: column;
+    /* Organiza o nome e cargo em coluna */
+    justify-content: center;
+    /* Centraliza verticalmente o nome e cargo */
 }
 
 .detbox p {
-    margin: 0; /* Remove a margem padrão dos parágrafos */
+    margin: 0;
+    /* Remove a margem padrão dos parágrafos */
 }
 
 .detbox .nome {
-    color: hsl(0, 0%, 81%); /* Define a cor do nome */
-    font-size: 0.9rem; /* Define o tamanho da fonte do nome */
-    margin-bottom: 0.1rem; /* Define a margem inferior do nome */
-    font-weight: 600; /* Define a espessura da fonte do nome */
+    color: hsl(0, 0%, 81%);
+    /* Define a cor do nome */
+    font-size: 0.9rem;
+    /* Define o tamanho da fonte do nome */
+    margin-bottom: 0.1rem;
+    /* Define a margem inferior do nome */
+    font-weight: 600;
+    /* Define a espessura da fonte do nome */
 }
 
 .detbox .nome.dark {
-    color: #49505A; /* Define a cor do nome para os depoimentos com a classe "dark" */
+    color: #49505A;
+    /* Define a cor do nome para os depoimentos com a classe "dark" */
 }
 
 .detbox .profissao {
-    color: hsl(0, 0%, 81%); /* Define a cor do cargo */
-    opacity: 50%; /* Define a opacidade do cargo */
-    font-size: 0.8rem; /* Define o tamanho da fonte do cargo */
+    color: hsl(0, 0%, 81%);
+    /* Define a cor do cargo */
+    opacity: 50%;
+    /* Define a opacidade do cargo */
+    font-size: 0.8rem;
+    /* Define o tamanho da fonte do cargo */
 }
 
 .detbox .profissao.dark {
-    color: #49505A; /* Define a cor do cargo para os depoimentos com a classe "dark" */
+    color: #49505A;
+    /* Define a cor do cargo para os depoimentos com a classe "dark" */
 }
 
 .review h4 {
-    font-size: 1.4rem; /* Define o tamanho da fonte do título do depoimento */
-    color: #F3DEFF; /* Define a cor do título do depoimento */
-    font-weight: 600; /* Define a espessura da fonte do título do depoimento */
-    line-height: 1.5; /* Define o espaçamento entre as linhas do título */
-    margin-bottom: 0.8rem; /* Define a margem inferior do título */
+    font-size: 1.4rem;
+    /* Define o tamanho da fonte do título do depoimento */
+    color: #F3DEFF;
+    /* Define a cor do título do depoimento */
+    font-weight: 600;
+    /* Define a espessura da fonte do título do depoimento */
+    line-height: 1.5;
+    /* Define o espaçamento entre as linhas do título */
+    margin-bottom: 0.8rem;
+    /* Define a margem inferior do título */
 }
 
 .comentario.dark h4 {
-    color: #292929; /* Define a cor do título para os depoimentos com a classe "dark" */
+    color: #292929;
+    /* Define a cor do título para os depoimentos com a classe "dark" */
 }
 
 .comentario p {
-    font-size: 0.95rem; /* Define o tamanho da fonte do texto do depoimento */
-    color: #F3DEFF; /* Define a cor do texto do depoimento */
-    font-weight: 500; /* Define a espessura da fonte do texto do depoimento */
-    opacity: 50%; /* Define a opacidade do texto do depoimento */
-    line-height: 1.5; /* Define o espaçamento entre as linhas do texto */
+    font-size: 0.95rem;
+    /* Define o tamanho da fonte do texto do depoimento */
+    color: #F3DEFF;
+    /* Define a cor do texto do depoimento */
+    font-weight: 500;
+    /* Define a espessura da fonte do texto do depoimento */
+    opacity: 50%;
+    /* Define a opacidade do texto do depoimento */
+    line-height: 1.5;
+    /* Define o espaçamento entre as linhas do texto */
 }
 
 .comentario.dark p {
-    color: #000000; /* Define a cor do texto para os depoimentos com a classe "dark" */
+    color: #000000;
+    /* Define a cor do texto para os depoimentos com a classe "dark" */
 }
 
-.comentario h4{
+.comentario h4 {
     color: white;
 }
 
 .attribution {
-    font-size: 1rem; /* Define o tamanho da fonte da atribuição */
-    line-height: 1.5; /* Define o espaçamento entre as linhas da atribuição */
-    position: fixed; /* Posiciona a atribuição de forma fixa na tela */
-    bottom: 1rem; /* Define a distância da atribuição da parte inferior da tela */
-    right: 1rem; /* Define a distância da atribuição da parte direita da tela */
-    text-align: right; /* Alinha o texto da atribuição à direita */
+    font-size: 1rem;
+    /* Define o tamanho da fonte da atribuição */
+    line-height: 1.5;
+    /* Define o espaçamento entre as linhas da atribuição */
+    position: fixed;
+    /* Posiciona a atribuição de forma fixa na tela */
+    bottom: 1rem;
+    /* Define a distância da atribuição da parte inferior da tela */
+    right: 1rem;
+    /* Define a distância da atribuição da parte direita da tela */
+    text-align: right;
+    /* Alinha o texto da atribuição à direita */
 }
 
 .attribution a {
-    text-decoration: none; /* Remove a decoração padrão dos links */
+    text-decoration: none;
+    /* Remove a decoração padrão dos links */
 }
 
 @media only screen and (max-width: 1025px) {
     .innerdiv {
-        transform: scale(0.85); /* Reduz o tamanho dos depoimentos em telas menores */
+        transform: scale(0.85);
+        /* Reduz o tamanho dos depoimentos em telas menores */
     }
 }
 
@@ -269,118 +344,133 @@ a {
     .innerdiv {
         transform: scale(0.8);
     }
- .div2,.div4{
-    display: none;
- }
- .div1{
-    width: 520px;
- }
- .div5{
-    margin: 0px 0px 0px -520px;
- }
- .div3{
-    width: 250px;
- }
-}
 
-@media only screen and (max-width: 430px) {
-    .div1,.div2,.div4,.div5 {
+    .div2,
+    .div4 {
         display: none;
     }
 
-    .div3{
+    .div1 {
+        width: 520px;
+    }
+
+    .div5 {
+        margin: 0px 0px 0px -520px;
+    }
+
+    .div3 {
+        width: 250px;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+
+    .div1,
+    .div2,
+    .div4,
+    .div5 {
+        display: none;
+    }
+
+    .div3 {
         width: 300px;
     }
+
     .innerdiv {
-        display: flex; /* Altera o layout para flexbox em telas menores */
-        flex-direction: column; /* Organiza os depoimentos em coluna */
-        transform: scale(1); /* Restaura o tamanho original dos depoimentos */
-        margin: 2rem; /* Define margem ao redor dos depoimentos */
-        margin-bottom: 5rem; /* Define margem inferior adicional */
+        display: flex;
+        /* Altera o layout para flexbox em telas menores */
+        flex-direction: column;
+        /* Organiza os depoimentos em coluna */
+        transform: scale(1);
+        /* Restaura o tamanho original dos depoimentos */
+        margin: 2rem;
+        /* Define margem ao redor dos depoimentos */
+        margin-bottom: 5rem;
+        /* Define margem inferior adicional */
     }
 }
 
 .texto-div--4 {
     color: white;
-  }
+}
 
- 
 
-.prof-div{
+
+.prof-div {
     display: flex;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     padding: 5px;
     background-color: #F2E3D0;
     margin: 40px 30px 10px 30px;
 }
 
-.prof-1-sec{
+.prof-1-sec {
     margin: -40px 0px 0px 0px;
 }
 
-.prof-2-sec{
+.prof-2-sec {
     margin: -40px 0px 0px 0px;
 }
 
-.prof-3-sec{
+.prof-3-sec {
     margin: -40px 0px 0px 0px;
 }
-  
-.alin-prof{
-  padding: 20px;
-  background-color: #8A7875;
-  max-height: 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+.alin-prof {
+    padding: 20px;
+    background-color: #8A7875;
+    max-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.social-prof{
+.social-prof {
     padding: 10px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
-.txt-prof{
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
+.txt-prof {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.professores{
+.professores {
     padding: 10px;
 }
 
-footer{
+footer {
     background-color: #8A7875;
     color: white;
     padding: 0px 10px 10px 10px;
 }
 
-.rodape-1{
+.rodape-1 {
     background-color: #8A7875;
     color: white;
     display: grid;
     grid-template-columns: 20% 20% 35% 20% 5%;
 }
 
-.rodape-txt-col{
-  padding: 10px;
-}
-
-.email-form{
+.rodape-txt-col {
     padding: 10px;
 }
 
-.social-curso{
+.email-form {
+    padding: 10px;
+}
+
+.social-curso {
     display: flex;
     padding: 20px 10px;
     justify-content: space-between;
     max-width: 200px;
 }
 
-.separacao.light{
+.separacao.light {
     color: white;
     background-color: white;
     height: 2px;
@@ -389,47 +479,63 @@ footer{
 /* Estilos para telas menores que 768px (celulares) */
 @media (max-width: 768px) {
     .main-nav {
-      display: none; /* Oculta a navegação principal */
+        display: none;
+        /* Oculta a navegação principal */
     }
+
     /* Adicione aqui os estilos para o menu hambúrguer */
     .alinhamento-1 {
-      margin: 20px; /* Ajusta a margem do texto de apresentação */
+        margin: 20px;
+        /* Ajusta a margem do texto de apresentação */
     }
+
     .innerdiv {
-      grid-template-columns: 1fr; /* Altera o layout dos depoimentos para uma coluna */
+        grid-template-columns: 1fr;
+        /* Altera o layout dos depoimentos para uma coluna */
     }
+
     .prof-div {
-      flex-direction: column; /* Altera o layout dos professores para coluna */
+        flex-direction: column;
+        /* Altera o layout dos professores para coluna */
     }
+
     .rodape-1 {
-      grid-template-columns: 1fr; /* Altera o layout do rodapé para uma coluna */
+        grid-template-columns: 1fr;
+        /* Altera o layout do rodapé para uma coluna */
     }
+
     .social-curso {
-      justify-content: center; /* Centraliza as redes sociais no rodapé */
+        justify-content: center;
+        /* Centraliza as redes sociais no rodapé */
     }
-  }
-  
-  /* Estilos para telas maiores que 1440px (telas grandes) */
-  @media (min-width: 1440px) {
+}
+
+/* Estilos para telas maiores que 1440px (telas grandes) */
+@media (min-width: 1440px) {
     .container {
-      max-width: 1200px; /* Limita a largura do conteúdo */
-      margin: 0 auto; /* Centraliza o conteúdo */
+        max-width: 1200px;
+        /* Limita a largura do conteúdo */
+        margin: 0 auto;
+        /* Centraliza o conteúdo */
     }
+
     .alinhamento-1 {
-      font-size: 18px; /* Aumenta o tamanho da fonte do texto de apresentação */
+        font-size: 18px;
+        /* Aumenta o tamanho da fonte do texto de apresentação */
     }
-    .logo-nav{
+
+    .logo-nav {
         width: 18%;
         margin: -20px 0px 0px -1270px;
     }
-  }
+}
 
-  .logo-nav{
+.logo-nav {
     width: 18%;
     margin: -20px 0px 0px -1180px;
 }
 
-.main-nav{
+.main-nav {
     padding: 5px;
     margin-top: 0;
     display: flex;
@@ -439,35 +545,37 @@ footer{
     right: 60px;
 }
 
-  @media (max-width: 1025px){
-    .logo-nav{
+@media (max-width: 1025px) {
+    .logo-nav {
         width: 20%;
         margin: -20px 0px 0px -800px;
     }
-    .header{
+
+    .header {
         height: 80px;
     }
 
-.main-nav{
-    padding: 5px;
-    margin-top: 0;
-    display: flex;
-    justify-content: space-between;
-    position: absolute;
-    top: 20px;
-    right: 60px;
+    .main-nav {
+        padding: 5px;
+        margin-top: 0;
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        top: 20px;
+        right: 60px;
+    }
+
+    .alinhamento-1 {
+        font-size: 15px;
+    }
+
+    .professores {
+        transform: scale(0.9);
+    }
 }
-.alinhamento-1 {
-    font-size: 15px; /* Aumenta o tamanho da fonte do texto de apresentação */
-  }
 
-  .professores{
-    transform: scale(0.9);
-  }
-  }
-
-  @media (max-width: 800px){
-    .main-nav{
+@media (max-width: 800px) {
+    .main-nav {
         padding: 5px;
         margin-top: 0;
         display: flex;
@@ -476,56 +584,134 @@ footer{
         top: 15px;
         right: 50px;
     }
-    header{
+
+    header {
         height: 70px;
         font-size: 14px;
     }
-    .logo-nav{
+
+    .logo-nav {
         width: 20%;
         margin: -20px 0px 0px -650px;
     }
-    .alinhamento-1{
+
+    .alinhamento-1 {
         width: 350px;
         font-size: 14px;
         margin: 60px 0px 0px -30px;
     }
-    .alinhamento-2{
-        width:150px;
+
+    .alinhamento-2 {
+        width: 150px;
         font-size: 14px;
         margin: 70px 0px 0px 70px;
         padding: 0px;
     }
-    .professores{
+
+    .professores {
         transform: scale(0.9);
         margin: 10px;
         display: contents;
     }
 
-    .social-prof{
+    .social-prof {
         padding: 0px 0px 40px 0px;
         display: flex;
         justify-content: space-evenly;
     }
-  }
+}
 
-  @media(max-width: 430px){
-    .logo-nav{
+@media(max-width: 430px) {
+    .logo-nav {
         display: none;
     }
-    .conteudo{
+
+    .conteudo {
         display: contents;
     }
-    .alinhamento-1{
+
+    .alinhamento-1 {
         margin: 10px 0px 0px 40px;
     }
-    .alinhamento-2{
+
+    .alinhamento-2 {
         margin: 20px 0px 0px 135px;
     }
-  .tlt-prof{
-    font-size: 20px;
-  }
-  }
 
-  #tra-1{
+    .tlt-prof {
+        font-size: 20px;
+    }
+}
+
+#tra-1 {
     transition: ease-in;
-  }
+}
+
+@media(max-width: 375px) {
+
+    .logo-nav {
+        display: none;
+    }
+
+    .conteudo {
+        display: contents;
+    }
+
+    .alinhamento-1 {
+        margin: 10px 0px 0px 12px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-nav {
+        position: absolute;
+        left: 0;
+        right: 0;
+    }
+
+    .alinhamento-2 {
+        margin: 20px 0px 0px 117.5px;
+    }
+
+    .tlt-prof {
+        font-size: 20px;
+    }
+}
+
+@media(max-width:320px) {
+    .logo-nav {
+        display: none;
+    }
+
+    .conteudo {
+        display: contents;
+    }
+
+    .alinhamento-1 {
+        margin: 10px 0px 0px 0px;
+        width: 320px;
+        justify-content: center;
+        align-items: center;
+        font-size: 13.5px;
+    }
+
+    .main-nav {
+        margin: 0px 0px 0px -10px;
+        left: 1;
+        right: 0;
+        font-size: 13px;
+    }
+
+    .alinhamento-2 {
+        margin: 20px 0px 0px 90px;
+
+    }
+
+    .alin-prof{
+        background-color: transparent;
+    }
+
+    .tlt-prof {
+        font-size: 20px;
+    }
+}
