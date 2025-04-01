@@ -140,3 +140,22 @@ h1{
         width: 200px;
     }
 }
+
+@media(max-width:320px){
+    body{
+        font-size:12px;
+    }
+    h1{
+        margin:10px 0 0 120px;
+    }
+    .rodape{
+        display: none;
+    }
+    ul{
+        width: 100px;
+    }
+    .alinhamento-2{
+        width: 180px;
+        margin:0px 0px 0px 90px;
+    }
+}
