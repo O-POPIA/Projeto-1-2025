@@ -111,6 +111,28 @@ h1{
     margin: 20px 320px 20px 440px;
 }
 
+@media(max-width:768px){
+    body{
+        font-size:12px;
+    }
+    h1{
+        margin:10px 0 0 110px;
+    }
+    .rodape{
+        display: none;
+    }
+    .alinhamento-2{
+        margin: 10px 0px 0px 110px;
+        width: 600px;
+    }
+    .proxima-aula{
+        margin: 10px 20px 0px 0px;
+    }
+    .gif-1{
+        margin: -10px 20px 0px 0px;
+    }
+}
+
 @media(max-width:425px){
     body{
         font-size:12px;
@@ -120,6 +142,9 @@ h1{
     }
     .rodape{
         display: none;
+    }
+    .alinhamento-2{
+        max-width: 280px;
     }
 }
 
@@ -137,7 +162,12 @@ h1{
         width: 100px;
     }
     .alinhamento-2{
-        width: 200px;
+        width: 270px;
+        margin: 10px 0px 0px 85px;
+    }
+    
+    .proxima-aula{
+        margin: 10px 0px 0px 100px;
     }
 }
 
@@ -155,7 +185,7 @@ h1{
         width: 100px;
     }
     .alinhamento-2{
-        width: 180px;
-        margin:0px 0px 0px 90px;
+        width: 210px;
+        margin:0px 0px 0px 80px;
     }
 }
