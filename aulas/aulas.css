@@ -111,3 +111,32 @@ h1{
     margin: 20px 320px 20px 440px;
 }
 
+@media(max-width:425px){
+    body{
+        font-size:12px;
+    }
+    h1{
+        margin:10px 0 0 110px;
+    }
+    .rodape{
+        display: none;
+    }
+}
+
+@media(max-width:375px){
+    body{
+        font-size:12px;
+    }
+    h1{
+        margin:10px 0 0 120px;
+    }
+    .rodape{
+        display: none;
+    }
+    ul{
+        width: 100px;
+    }
+    .alinhamento-2{
+        width: 200px;
+    }
+}
